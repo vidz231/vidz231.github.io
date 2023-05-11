@@ -1,0 +1,135 @@
+* { Box-sizing: Border-box } 
+.header-page{
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgb(67, 40, 28);
+    text-align: center;
+    margin-top:0px;
+    background-color: #43281c;
+    color:#E5D9AC;
+    width:100%;
+}
+.header-color{
+    color:#333D29;
+}
+.background{
+    background-color: #EFEFEF;
+}
+.placeorder{
+    text-align: center;
+    
+    border-radius: 80px;
+    background-color:#DDB892;
+    width: 80%;
+    position: relative;
+    padding: 1px;
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+    margin:auto;
+}
+.no-underline{
+    text-decoration: none;
+    color: #3E4430;
+}
+.items{
+    margin-top:0px;
+    padding-left: 3px;
+    background-color:#EDE0D4;
+    text-align: left;
+    grid-area:item;
+    border-radius: 9px;
+    list-style-type: lower-alpha;
+}
+.item-description-color{
+    color:#8A5C34;
+}
+.grid-items{
+    display:grid;
+    grid-template-columns: 1fr 7fr 3fr;
+    grid-template-areas:"items items items" 
+                        "amount name price"
+                        "amount name price"
+                        "amount name price";
+}
+.grid-itemdisplay{
+    display:grid;
+    grid-area:items;
+    margin-bottom: 0px;
+}
+.order-amount{
+    display:grid;
+    grid-area: amount;
+    margin-right:0px;
+}
+.order-name{
+    display:grid;
+    grid-area: name;
+    text-align: left;
+    
+}
+.order-price{
+    display:grid;
+    grid-area: price;
+}
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+.payments{
+    background-color:#EDE0D4;
+    margin-top:0px;
+    grid-area: payment;
+    text-align: left;
+    border-radius: 9px;
+}
+.name{
+    background-color:#EDE0D4;
+    position: relative;
+    
+    margin-top: 0px;
+    grid-area:name;
+    text-align: left;
+    border-radius: 9px;
+}
+.subtotal{
+
+    display:grid;
+    justify-content: center;
+    width:30%;
+    position: relative;
+    bottom: -140px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "b price"
+                         "b price"
+                         "b price"
+                         "b price"
+                         "b price";
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+}
+.price-box{
+    grid-area: price;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+.box{
+    grid-area: b;
+    text-align: left;
+}
+
+.page{
+    display:grid;
+    font-family: 'Open Sans', sans-serif;
+    grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
+    
+    grid-template-areas: 
+                        ".  item  .  payment ."
+                        ".  item  .  name    ."
+                        ".  .     .  name    .";
+    column-gap: 3px;
+    row-gap: 10px;
+    justify-content: center;
+}
